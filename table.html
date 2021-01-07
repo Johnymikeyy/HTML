@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h2>Basic HTML Table</h2>
+    <table border="5">
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Age</th>
+        </tr>   <!--table raw-->
+
+        <tr>
+            <td>Mccharty</td>
+            <td>Silva</td>
+            <td>39</td>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>25</td>
+        </tr>
+    </table>
+    
+    <h2>Cell that spans two columns</h2>
+    <table border="3">
+        <tr>  <!--tr>th*2-->
+            <th>Name</th>
+            <th colspan="2" align="middle">Telephone</th>
+        </tr>
+
+        <tr>
+            <td>Bill</td>
+            <td>5551265325</td>
+            <td>5552365456</td>
+        </tr>
+     
+    </table>
+
+    <h3>Cell that spans two rows</h3>
+    <table border="3" style="width:400px">
+        <caption style="caption-side: bottom;"><b>Name and Telephone Numbers</b></caption>
+        <tr>
+            <th align="left"> Name:</th>
+            <td align="center">Mccharty Silva</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2" align="left">Telephone</th>
+            <td align="center">21213213</td>
+        </tr>
+        <tr>
+            <td align="center">12131331</td>
+        </tr>    
+    </table>
+</body>
+</html>
